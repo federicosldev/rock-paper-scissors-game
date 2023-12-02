@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    background: rgb(19,21,55);
+    background: radial-gradient(circle, rgba(19,21,55,1) 0%, rgba(31,55,87,1) 100%);
+    margin: 0 auto;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h2 {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 200px;
+}
+.col1 {
+    text-align: center; 
+    justify-content: center;
+    align-items: center;   
+}
+.col2 {
+    text-align: center;
+} 
+/* SIMPLE MODE */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+}
+.marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    gap: 100px;
+    border: 2px solid rgba(211, 211, 211, 0.26);
+    padding: 20px 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.marker__col1,
+.marker__col2 {
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px 50px;
+    height: 79%;
+}
+.marker__col1 h2,
+.marker__col2 h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2A45C2;
+}
+.marker__col1 span,
+.marker__col2 span {
+    font-size: 80px;
+    font-weight: 700;
+    color: #565468;
+}
+.table {
+    background-image: url(/assets/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.game__icon {
+    --color-border: ;
+    --color-shadow: ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid var(--color-border);
+    box-shadow: 0 10px var(--color-shadow), inset 0 10px rgba(0, 0, 150, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.game__icon:hover {
+    transform: scale(0.85);
+}
+.game__icon-papper {
+    --color-border: #5671f5;
+    --color-shadow: #2a45c2;
+}
+.game__icon-scissors {
+    --color-border: #eb9f0e;
+    --color-shadow: #c76c1b;
+}
+.game__icon-rock {
+    --color-border: #db2e4d;
+    --color-shadow: #9d1634;
+}
+.game__icon-lizard {
+    --color-border: #834ee3;
+    --color-shadow: #351472;
+}
+.game__icon-spock {
+    --color-border: #2d8dab;
+    --color-shadow: #156d88;
+}
+
+.gameAdvanced {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 37px;
+    justify-content: center;
+}
+.marker__col1-Adv,
+.marker__col2-Adv {
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px 50px;
+    height: 59%;
+}
+.marker__col1-Adv h2,
+.marker__col2-Adv h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2A45C2;
+}
+.marker__col1-Adv span,
+.marker__col2-Adv span {
+    font-size: 80px;
+    font-weight: 700;
+    color: #565468;
+}
+.marker-Adv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    gap: 100px;
+    border: 2px solid rgba(211, 211, 211, 0.26);
+    padding: 0px 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+/*RESULT*/
+#title-result {
+    text-align: center;
+}
+.off {
+    display: none;
+}
+.on {
+    display: block;
+}
+#continue-play {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#continue-play:hover {
+    color: red;
+}
+
+.game1 {
+    display: flex;
+    gap: 60px;
+}
+.game1 span {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 145px;
+}  
